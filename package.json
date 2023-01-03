@@ -44,7 +44,7 @@
     ]
   },
   "proxy": "http://localhost:3001",
-  "homepage": ".",
+  "homepage": "https://ronaldozica.github.io/artesdajackeline/",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
