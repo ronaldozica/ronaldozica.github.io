@@ -1,0 +1,17 @@
+.Home {
+    text-align: center;
+    font: italic 1.2em "Fira Sans", serif;
+    font-size: 3vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vh 0;
+  }
+  
+  .Home-header {
+    width: 30vw;
+  }
+  
+  .Home-items {
+    width: 70vw;
+  }

@@ -1,0 +1,16 @@
+.ProductList {
+    height: 50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2vh;
+}
+
+.ProductListBottom {
+    height: 50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2vh;
+    margin-bottom: 10vh;
+}

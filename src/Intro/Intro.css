@@ -1,0 +1,23 @@
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+	padding-top: 2vh;
+	margin-bottom: 10vh;
+}
+
+.Image {
+	width: 80vw;
+	border-width: 0.5vw;
+	border-style: solid;
+	border-color: #1a1ac5;
+}
+
+/* Centered text */
+.Centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font: italic 3.2em "Fira Sans", serif;
+}
