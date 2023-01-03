@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/artesdajackeline/static/css/main.7301c257.css",
+    "main.js": "/artesdajackeline/static/js/main.a43392d3.js",
+    "index.html": "/artesdajackeline/index.html",
+    "main.7301c257.css.map": "/artesdajackeline/static/css/main.7301c257.css.map",
+    "main.a43392d3.js.map": "/artesdajackeline/static/js/main.a43392d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7301c257.css",
+    "static/js/main.a43392d3.js"
+  ]
+}
