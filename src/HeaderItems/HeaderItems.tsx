@@ -34,7 +34,7 @@ export default function HeaderItems() {
 					</Link>
 				</li>
 				<li>
-					<Link to="a/aboutbout">
+					<Link to="/about">
 						<span className="AboutItem">
 							Loja
 						</span>
