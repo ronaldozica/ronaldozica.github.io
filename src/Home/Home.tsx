@@ -1,42 +1,53 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import Header from '../Header/Header';
 import Intro from '../Intro/Intro';
 import Products from '../Products/Products';
 import About from '../About/About';
 import Services from '../Services/Services';
+import { Context } from '../App';
+import FakeSuspense from '../Delayed/Delayed';
 
 function Home() {
-	// const [data, setData] = React.useState(null);
+	const context = React.useContext(Context);
+	const isSideMenuOpen = context.sideMenuOpen.isSideMenuOpen;
 
-	// React.useEffect(() => {
-	// 	fetch("/api")
-	// 		.then((res) => res.json())
-	// 		.then((data) => setData(data.message));
-	// }, []);
+	useEffect(() => {
+		console.log(isSideMenuOpen)
+	});
 
 	return (
-		<div className="Background">
-			<div>
-				<Header />
-			</div>
+		<>
+			{
+				isSideMenuOpen ?
+					null
+					:
+					<>
+						<FakeSuspense delay={1700}>
+							<div className="Background">
+								<div>
+									<Header />
+								</div>
 
-			<div className="IntroHome">
-				<Intro />
-			</div>
+								<div className="IntroHome">
+									<Intro />
+								</div>
 
-			<div>
-				<Products />
-			</div>
+								<div>
+									<Products />
+								</div>
 
-			<div className="AboutHome">
-				<About />
-			</div>
+								<div className="AboutHome">
+									<About />
+								</div>
 
-			<div>
-				<Services />
-			</div>
-		</div>
+								<div>
+									<Services />
+								</div>
+							</div>
+						</FakeSuspense></>
+			}
+		</>
 	);
 }
 

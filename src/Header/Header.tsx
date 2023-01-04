@@ -8,7 +8,7 @@ export default function Header() {
 		<div className="Home">
 			<div className="Home-header">
 				<Link to="/">
-					<img src={require('../Images/logo.png')} alt="logo" className="Home-logo" />
+					<img src={require('../Images/logo_sem_wpp.png')} alt="logo" className="Home-logo" />
 				</Link>
 			</div>
 
