@@ -7,13 +7,13 @@ import About from '../About/About';
 import Services from '../Services/Services';
 
 function Home() {
-	const [data, setData] = React.useState(null);
+	// const [data, setData] = React.useState(null);
 
-	React.useEffect(() => {
-		fetch("/api")
-			.then((res) => res.json())
-			.then((data) => setData(data.message));
-	}, []);
+	// React.useEffect(() => {
+	// 	fetch("/api")
+	// 		.then((res) => res.json())
+	// 		.then((data) => setData(data.message));
+	// }, []);
 
 	return (
 		<div className="Background">
@@ -21,7 +21,7 @@ function Home() {
 				<Header />
 			</div>
 
-			<div>
+			<div className="IntroHome">
 				<Intro />
 			</div>
 
@@ -36,8 +36,6 @@ function Home() {
 			<div>
 				<Services />
 			</div>
-
-			<p>{!data ? "Loading..." : data}</p>
 		</div>
 	);
 }

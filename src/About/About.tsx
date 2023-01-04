@@ -1,7 +1,6 @@
 import './About.css';
 
 export default function About() {
-	const LOGO_URL = "https://cdn.discordapp.com/attachments/1056950292656169102/1056950361358876782/logo.png";
 	return (
 		<div className="About">
 			<div>
@@ -12,7 +11,7 @@ export default function About() {
 				</div>
 			</div>
 			<div>
-				<img src={LOGO_URL} alt="logo" className="About-img" />
+			<img src={require('../Images/logo.png')} alt="about" className="About-img" />
 			</div>
 		</div>
 	)
