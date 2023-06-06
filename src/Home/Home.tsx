@@ -1,54 +1,37 @@
-import React, { useEffect } from 'react';
-import './Home.css';
-import Header from '../Header/Header';
-import Intro from '../Intro/Intro';
-import Products from '../Products/Products';
-import About from '../About/About';
-import Services from '../Services/Services';
-import { Context } from '../App';
-import FakeSuspense from '../Delayed/Delayed';
+import React from "react";
+import "./Home.css";
+import Header from "../Header/Header";
+import Intro from "../Intro/Intro";
+import Products from "../Products/Products";
+import About from "../About/About";
+import Services from "../Services/Services";
 
 function Home() {
-	const context = React.useContext(Context);
-	const isSideMenuOpen = context.sideMenuOpen.isSideMenuOpen;
+    return (
+        <>
+            <div className="Background">
+                <div>
+                    <Header />
+                </div>
 
-	useEffect(() => {
-		console.log(isSideMenuOpen)
-	});
+                <div className="IntroHome">
+                    <Intro />
+                </div>
 
-	return (
-		<>
-			{
-				isSideMenuOpen ?
-					null
-					:
-					<>
-						<FakeSuspense delay={1700}>
-							<div className="Background">
-								<div>
-									<Header />
-								</div>
+                <div>
+                    <Products />
+                </div>
 
-								<div className="IntroHome">
-									<Intro />
-								</div>
+                <div className="AboutHome">
+                    <About />
+                </div>
 
-								<div>
-									<Products />
-								</div>
-
-								<div className="AboutHome">
-									<About />
-								</div>
-
-								<div>
-									<Services />
-								</div>
-							</div>
-						</FakeSuspense></>
-			}
-		</>
-	);
+                <div>
+                    <Services />
+                </div>
+            </div>
+        </>
+    );
 }
 
 export default Home;
