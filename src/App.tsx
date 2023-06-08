@@ -4,6 +4,7 @@ import Home from "./Home/Home";
 import AboutPage from "./AboutPage/AboutPage";
 import SideMenu from "./SideMenu/SideMenu";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SignIn from "./SignIn/SignIn";
 
 const Context = React.createContext<any>(null);
 
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/artesdajackeline" element={<Home />} />
                     <Route path="/about" element={<AboutPage />} />
+                    <Route path="/signIn" element={<SignIn />} />
                 </Routes>
             </Context.Provider>
         </div>
