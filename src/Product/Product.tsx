@@ -1,20 +1,34 @@
 import './Product.css';
 
-export default function Product() {
-    const IMAGE_URL = "https://img.elo7.com.br/product/main/16E1780/galinha-peso-de-porta-cozinha.jpg";
+export interface ProductType {
+    imageUrl?: string,
+    name?: string,
+    description?: string,
+    sizes?: string[]
+};
+
+export default function Product({
+    imageUrl = "https://img.elo7.com.br/product/main/16E1780/galinha-peso-de-porta-cozinha.jpg",
+    name = "Nome",
+    description = "Descrição do produto",
+    sizes = ["P", "M", "G", "XG"],
+}: ProductType) {  
     return (
         <div className="container page-wrapper">
             <div className="page-inner">
                 <div className="row">
                     <div className="el-wrapper">
                         <div className="box-up">
-                            <img className="img" src={IMAGE_URL} alt=""/>
+                            <img className="img" src={imageUrl} alt=""/>
                                 <div className="img-info">
                                     <div className="info-inner">
-                                        <span className="p-name">Descrição do produto</span>
-                                        <span className="p-company">Nome</span>
+                                        <span className="p-name">{description}</span>
+                                        <span className="p-company">{name}</span>
                                     </div>
-                                    <div className="a-size">Disponível nos tamanhos: <span className="size">P, M, G, XG</span></div>
+                                    {
+                                        sizes && sizes.length > 0 &&
+                                        <div className="a-size">Disponível nos tamanhos: <span className="size">{sizes.join(', ')}</span></div>   
+                                    }
                                 </div>
                         </div>
 

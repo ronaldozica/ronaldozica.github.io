@@ -5,6 +5,7 @@ import AboutPage from "./AboutPage/AboutPage";
 import SideMenu from "./SideMenu/SideMenu";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SignIn from "./SignIn/SignIn";
+import SignUp from "./SignUp/SignUp";
 
 const Context = React.createContext<any>(null);
 
@@ -27,6 +28,8 @@ function App() {
                     <Route path="/artesdajackeline" element={<Home />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/signIn" element={<SignIn />} />
+                    <Route path="/signUp" element={<SignUp />} />
+                
                 </Routes>
             </Context.Provider>
         </div>

@@ -1,10 +1,9 @@
 import React from "react";
 import Header from "../Header/Header";
 import * as Form from "@radix-ui/react-form";
-import "./SignIn.css";
-import { Link } from "react-router-dom";
+import "./SignUp.css";
 
-function SignIn() {
+function SignUp() {
 	return (
 		<div>
 			<div>
@@ -71,21 +70,11 @@ const LoginForm = () => {
 			</Form.Field>
 			<Form.Submit asChild>
 				<button className="Button primary" style={{ marginTop: 10 }}>
-					Entrar
+					Registrar
 				</button>
 			</Form.Submit>
-			<Link
-                to="/signUp"
-				className="Button secundary"
-				style={{
-					marginTop: 10,
-                    textDecoration: "none"
-				}}
-			>
-				Criar conta
-			</Link>
 		</Form.Root>
 	);
 };
 
-export default SignIn;
+export default SignUp;

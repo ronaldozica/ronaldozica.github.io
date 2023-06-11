@@ -1,21 +1,22 @@
-import Product from '../Product/Product';
-import './Products.css';
+import { useState } from "react";
+import Product, { ProductType } from "../Product/Product";
+import "./Products.css";
 
 export default function Products() {
-    return (
-        <div>
-            <div className="ProductList">
+    const [products, setProducts] = useState<ProductType[] | null>(null);
+
+	return (
+		<div>
+			<div className="ProductList">
+				<Product />
+				<Product />
+				<Product />
+				<Product /> 
                 <Product />
-                <Product />
-                <Product />
-                <Product />
-            </div>
-            <div className="ProductListBottom">
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-            </div>
-        </div>
-    );
-}  
+				<Product />
+				<Product />
+				<Product />
+			</div>
+		</div>
+	);
+}
