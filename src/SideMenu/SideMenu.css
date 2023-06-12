@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Lato", sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 .wrapper {
@@ -20,13 +20,13 @@
     transition: all 0.6s ease-in-out;
 }
 
-#active:checked~.wrapper {
+#active:checked ~ .wrapper {
     /*left: 0;*/
     right: 0;
 }
 
 .menu-btn {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     right: 20px;
     /*left: 20px; */
@@ -54,7 +54,7 @@
     left: 30%;
     width: 40%;
     border-bottom: 2px solid #000;
-    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .menu-btn:before {
@@ -70,20 +70,20 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    transition: background .6s;
+    transition: background 0.6s;
 }
 
 /* closing animation */
-#active:checked+.menu-btn span {
+#active:checked + .menu-btn span {
     transform: scaleX(0);
 }
 
-#active:checked+.menu-btn:before {
+#active:checked + .menu-btn:before {
     transform: rotate(45deg);
     border-color: #fff;
 }
 
-#active:checked+.menu-btn:after {
+#active:checked + .menu-btn:after {
     transform: rotate(-45deg);
     border-color: #fff;
 }
@@ -115,7 +115,7 @@
     margin: 5px 30px;
     opacity: 0;
     transition: all 0.3s ease;
-    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .wrapper ul li a:after {
@@ -167,7 +167,7 @@ input[type="checkbox"] {
     font-weight: 600;
 }
 
-#active:checked~.wrapper ul li a {
+#active:checked ~ .wrapper ul li a {
     opacity: 1;
 }
 
@@ -176,10 +176,14 @@ input[type="checkbox"] {
     transform: translateX(100px);
 }
 
-#active:checked~.wrapper ul li a {
+#active:checked ~ .wrapper ul li a {
     transform: none;
-    transition-timing-function: ease, cubic-bezier(.1, 1.3, .3, 1);
+    transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1);
     /* easeOutBackを緩めた感じ */
-    transition-delay: .6s;
+    transition-delay: 0.6s;
     transform: translateX(-100px);
+}
+
+.sidemenu {
+    z-index: 10;
 }
