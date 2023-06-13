@@ -31,6 +31,23 @@ const LoginForm = () => {
 
 	return (
 		<Form.Root onSubmit={onSubmit} className="FormRoot">
+			<Form.Field className="FormField" name="name">
+				<div
+					style={{
+						display: "flex",
+						alignItems: "baseline",
+						justifyContent: "space-between",
+					}}
+				>
+					<Form.Label className="FormLabel">Nome</Form.Label>
+					<Form.Message className="FormMessage" match="valueMissing">
+						Por favor, preencha seu nome
+					</Form.Message>
+				</div>
+				<Form.Control asChild>
+					<input className="Input" type="email" required />
+				</Form.Control>
+			</Form.Field>
 			<Form.Field className="FormField" name="email">
 				<div
 					style={{
