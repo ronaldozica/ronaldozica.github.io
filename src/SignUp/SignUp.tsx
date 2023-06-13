@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header/Header";
 import * as Form from "@radix-ui/react-form";
 import "./SignUp.css";
+import PasswordStrengthBar from "react-password-strength-bar";
 
 function SignUp() {
 	return (
@@ -28,6 +29,8 @@ const LoginForm = () => {
 		event.preventDefault();
 		console.log(event);
 	};
+
+	const [password, setPassword] = useState("");
 
 	return (
 		<Form.Root onSubmit={onSubmit} className="FormRoot">
@@ -82,9 +85,12 @@ const LoginForm = () => {
 					</Form.Message>
 				</div>
 				<Form.Control asChild>
-					<input className="Input" type="password" required />
+					<input className="Input" type="password" required value={password} onChange={(ev) => {
+						setPassword(ev.target.value)
+					}} />
 				</Form.Control>
 			</Form.Field>
+			<PasswordStrengthBar scoreWords={["Fraca", "Fraca", "Boa", "Ótima", "Perfeito"]} password={password} shortScoreWord="Muito curta"/>
 			<Form.Submit asChild>
 				<button className="Button primary" style={{ marginTop: 10 }}>
 					Registrar
