@@ -55,3 +55,7 @@
 .SignInContainer:hover .SignInIcon {
     transform: scale(1.2);
 }
+
+.CustomItems{
+    display: flex;
+}

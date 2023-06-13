@@ -15,10 +15,8 @@ BODY {
 .Home-logo {
 	height: 20vmin;
 	max-height: 100%;
-    margin-left: 5vw;
     left: 0;
     top: 1vh;
-    position: absolute;
 }
 
 .Home-link {
