@@ -6,6 +6,9 @@ import SideMenu from "./SideMenu/SideMenu";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SignIn from "./SignIn/SignIn";
 import SignUp from "./SignUp/SignUp";
+import Contacts from "./Contacts/Contacts";
+import FrequentQuestions from "./FrequentQuestions/FrequentQuestions";
+import Shop from "./Shop/Shop";
 
 const Context = React.createContext<any>(null);
 
@@ -29,7 +32,10 @@ function App() {
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/signIn" element={<SignIn />} />
                     <Route path="/signUp" element={<SignUp />} />
-                
+                    <Route path="/frequentQuestions" element={<FrequentQuestions />} />
+                    <Route path="/contacts" element={<Contacts />} />
+                    <Route path="/shop" element={<Shop />} />
+
                 </Routes>
             </Context.Provider>
         </div>

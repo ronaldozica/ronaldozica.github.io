@@ -16,17 +16,17 @@ export default function HeaderItems() {
                     </Link>
                 </li>
                 <li className="RouterItem">
-                    <Link to="/about">
+                    <Link to="/frequentQuestions">
                         <span className="AboutItem">Perguntas frequentes</span>
                     </Link>
                 </li>
                 <li className="RouterItem">
-                    <Link to="/about">
+                    <Link to="/contacts">
                         <span className="AboutItem">Entre em contato</span>
                     </Link>
                 </li>
                 <li className="RouterItem">
-                    <Link to="/about">
+                    <Link to="/shop">
                         <span className="AboutItem">Loja</span>
                     </Link>
                 </li>
