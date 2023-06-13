@@ -13,7 +13,7 @@ export default function Products() {
                     imageUrl: getLocalUrl(id - 1)
                 }
           )));
-		}, 4000);
+		}, 100);
 	})
 
 	return (

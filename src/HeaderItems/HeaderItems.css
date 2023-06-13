@@ -1,14 +1,57 @@
-.AboutItem {
-    padding: 0.5vw;
-    color: #252525;
-    text-decoration: underline;
+.HeaderItems {
+    display: flex;
+    justify-content: center;
+}
+
+.MenuBox {
+    background-color: #808080;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;
 }
 
 .Routers {
     list-style-type: none;
-    display:flex;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .RouterItem {
-    width: 10vw;
+    margin-right: 10px;
+}
+
+.MenuItem {
+    padding: 0.5vw;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.MenuItem:hover {
+    background-color: #FFFFFF;
+    color: #808080;
+}
+
+.CartContainer,
+.SignInContainer {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CartIcon,
+.SignInIcon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.CartContainer:hover .CartIcon,
+.SignInContainer:hover .SignInIcon {
+    transform: scale(1.2);
 }

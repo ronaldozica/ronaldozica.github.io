@@ -3,6 +3,7 @@ import "./Shop.css";
 import { useEffect, useState } from "react";
 import Product, { ProductType } from "../Product/Product";
 import LoadingProduct from "../LoadingProduct/LoadingProduct";
+import SearchBar from "../SearchBar/SearchBar";
 
 function Shop() {
     const [products, setProducts] = useState<ProductType[] | null>(null);
@@ -21,6 +22,10 @@ function Shop() {
         <div>
             <div>
                 <Header />
+            </div>
+
+            <div>
+                <SearchBar />
             </div>
 
             <div

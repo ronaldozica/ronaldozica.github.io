@@ -6,10 +6,7 @@
     flex-direction: row;
     align-items: center;
     padding: 2vh 0;
-  }
-  
-  .Home-header {
-    width: 25vw;
+    justify-content: center;
   }
   
   /* .Home-items {
