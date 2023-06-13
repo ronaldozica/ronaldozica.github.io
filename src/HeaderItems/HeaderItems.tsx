@@ -5,32 +5,32 @@ export default function HeaderItems() {
     return (
         <section>
             <ul className="Routers">
-                <li>
+                <li className="RouterItem">
                     <Link to="/">
                         <span className="AboutItem">Página inicial</span>
                     </Link>
                 </li>
-                <li>
+                <li className="RouterItem">
                     <Link to="/about">
                         <span className="AboutItem">Sobre</span>
                     </Link>
                 </li>
-                <li>
+                <li className="RouterItem">
                     <Link to="/about">
                         <span className="AboutItem">Perguntas frequentes</span>
                     </Link>
                 </li>
-                <li>
+                <li className="RouterItem">
                     <Link to="/about">
                         <span className="AboutItem">Entre em contato</span>
                     </Link>
                 </li>
-                <li>
+                <li className="RouterItem">
                     <Link to="/about">
                         <span className="AboutItem">Loja</span>
                     </Link>
                 </li>
-                <li>
+                <li className="RouterItem">
                     <div
                         style={{
                             marginLeft: "5px",

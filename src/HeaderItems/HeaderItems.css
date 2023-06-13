@@ -7,6 +7,8 @@
 .Routers {
     list-style-type: none;
     display:flex;
-    margin: 1vw;
-    padding: 1vw;
+}
+
+.RouterItem {
+    width: 10vw;
 }
