@@ -22,7 +22,6 @@
     "react-dom": "^18.2.0",
     "react-flickity-component": "^4.0.0",
     "react-icons": "^4.9.0",
-    "react-password-strength-bar": "^0.4.1",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "switch": "^0.0.0",
