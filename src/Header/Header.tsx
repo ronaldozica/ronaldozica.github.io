@@ -1,35 +1,32 @@
-import './Header.css';
-import { Link } from 'react-router-dom';
-import HeaderItems from '../HeaderItems/HeaderItems';
-import { RiShoppingCartLine, RiUser3Line } from 'react-icons/ri';
+import React from 'react';
+import Navbar from '../Navbar/Navbar';
+import { Link } from 'react-scroll'; // react-scroll is a library for scrolling in React
+import SmallScreensNavbar from '../SmallScreenNavbar/SmallScreenNavbar';
+import { useWindowWidthAndHeight } from '../CustomHooks';
 
-export default function Header() {
-    return (
-        <>
-            <div className="Home">
-                <div className="Home-header">
-                    <Link to="/">
-                        <img src={require('../Images/logo_sem_wpp.png')} alt="logo" className="Home-logo" />
-                    </Link>
-                </div>
+const Header: React.FC = () => {
+	// use our custom hook to get the the window size
+	const [width, height] = useWindowWidthAndHeight();
+	console.log(height);
 
-                <div className="Home-items">
-                    <HeaderItems />
-                </div>
+	return (
+		<header>
+			<div className="header-inner">
+				<Link to="Home" smooth={true} className="logo nav-link">
+					Artes da Jackeline (mudar p/logo)
+				</Link>
+				{/* if the width of the window is bigger than 1000px use <Navebar/>, else use <SmallScreensNavbar/> */}
+				{width > 1000 ? (
+					<Navbar navClass="nav-big" linkClassName="nav-big-link" />
+				) : (
+					<SmallScreensNavbar
+						navClass="nav-small"
+						linkClassName="nav-small-link"
+					/>
+				)}
+			</div>
+		</header>
+	);
+};
 
-                <div className="CustomItems">
-                    <div>
-                        <Link to="/cart">
-                            <RiShoppingCartLine className="CartIcon" size={100} style={{ position: "relative", color: "black", width: "30px" }} />
-                        </Link>
-                    </div>
-                    <div>
-                        <Link to="/signIn">
-                            <RiUser3Line className="SignInIcon" size={100} style={{ position: "relative", color: "black", width: "30px" }} />
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}  
+export default Header;

@@ -75,11 +75,11 @@ const LoginForm = () => {
 				</button>
 			</Form.Submit>
 			<Link
-                to="/signUp"
+				to="/signUp"
 				className="Button secundary"
 				style={{
 					marginTop: 10,
-                    textDecoration: "none"
+					textDecoration: "none"
 				}}
 			>
 				Criar conta
