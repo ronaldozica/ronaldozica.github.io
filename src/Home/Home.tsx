@@ -4,30 +4,35 @@ import CarouselComponent from "../Carousel/Carousel";
 import Products from "../Products/Products";
 import About from "../About/About";
 import Services from "../Services/Services";
+import SocialMidiaIcons from "../SocialMidia/SocialMidia";
 
 function Home() {
 	return (
 		<>
 			<div className="Background">
-				<div className="NavbarHome">
+				<span className="NavbarHome">
 					<Header />
-				</div>
+				</span>
 
-				<div className="IntroHome">
+				<span className="IntroHome">
 					<CarouselComponent />
-				</div>
+				</span>
 
-				<div>
+				<>
 					<Services />
-				</div>
+				</>
 
-				<div>
+				<>
 					<Products />
-				</div>
+				</>
 
-				<div className="AboutHome">
+				<span className="AboutHome">
 					<About />
-				</div>
+				</span>
+
+				<>
+					<SocialMidiaIcons />
+				</>
 			</div>
 		</>
 	);
