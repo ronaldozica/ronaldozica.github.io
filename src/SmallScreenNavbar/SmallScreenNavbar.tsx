@@ -19,7 +19,7 @@ const SmallScreensNavbar: React.FC<SmallScreensNavbarProps> = ({ navClass, linkC
 			</button>
 			{/* hide and show the sidebar list based on whether translate is true or false */}
 			<div id="sidebar-list" className={`${translate ? 'addTransiton' : 'removeTransition'}`}>
-				<NavComponent navClass={navClass} linkClassName={linkClassName} onClick={() => setTranslate(true)} />
+				<NavComponent navClass={navClass} linkClassName={linkClassName} />
 			</div>
 		</div>
 	);

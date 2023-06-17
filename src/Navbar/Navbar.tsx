@@ -6,41 +6,40 @@ interface NavbarProps {
 	linkClassName: string;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ navClass, linkClassName }) => (
-	<NavComponent navClass={navClass} linkClassName={linkClassName} onClick={function (): void {
-		console.log('click')
-	}} />
-);
+const Navbar: React.FC<NavbarProps> = ({ navClass, linkClassName }) => {
+	return (
+		<NavComponent navClass={navClass} linkClassName={linkClassName} />
+	)
+};
 
 interface NavComponentProps {
-	onClick: () => void;
 	navClass: string;
 	linkClassName: string;
 }
 
-export const NavComponent: React.FC<NavComponentProps> = ({ onClick, navClass, linkClassName }) => {
+export const NavComponent: React.FC<NavComponentProps> = ({ navClass, linkClassName }) => {
 	const sections = [
 		{
-			id: "artesdajackeline",
+			id: "/artesdajackeline",
 			name: "Página inicial"
 		},
 		{
-			id: "store",
+			id: "/shop",
 			name: "Loja"
 		},
 		{
-			id: "about",
+			id: "/about",
 			name: "Sobre"
 		}
 	]
 	return (
 		<nav className={navClass}>
 			{sections.map((section) => (
-				<div id={section.id}>
-					<Link to={`/${section.id}`} className={linkClassName} id={section.id}>
+				<Link key={section.id} to={section.id} className={linkClassName}>
+					<span>
 						{section.name}
-					</Link>
-				</div>
+					</span>
+				</Link>
 			))}
 		</nav >
 	)
