@@ -18,6 +18,7 @@ export default function Products() {
 
 	return (
 		<div>
+            Confira nossos produtos mais recentes!
 			<div className="ProductList">
 				{!products || !products.length
 					? Array.from({ length: 8 }, (_, i) => i + 1).map((id) => (

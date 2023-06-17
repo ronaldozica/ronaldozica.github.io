@@ -21,11 +21,6 @@ export default function ServiceCard({ image, title, subtitle }: ServiceCardType)
 						<h5> {title} </h5>
 						<p> {subtitle} </p>
 					</div>
-					<a href="/">
-						<div className="property-social-icons">
-							{/* I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions */}
-						</div>
-					</a>
 				</div>
 			</div>
 		</div>

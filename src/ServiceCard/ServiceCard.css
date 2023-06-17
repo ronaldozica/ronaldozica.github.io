@@ -41,6 +41,7 @@ p {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	position: relative;
+    background-color: white;
 	-webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 	-o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -55,31 +56,22 @@ p {
 /* Top Half of card, image. */
 
 .property-image {
-	height: 6em;
+	height: 10em;
 	width: 14em;
 	padding: 1em 2em;
 	position: Absolute;
 	top: 0px;
-	-webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-	-o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-	background-size: cover;
-	background-repeat: no-repeat;
+    background-repeat: round;
 }
 
 /* Bottom Card Section */
 
 .property-description {
 	background-color: #FAFAFC;
-	height: 12em;
+	height: 7em;
 	width: 14em;
 	position: absolute;
 	bottom: 0em;
-	-webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-	-o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-	padding: 0.5em 1em;
-	text-align: center;
 }
 
 /* Social Icons */
@@ -95,44 +87,3 @@ p {
 	-o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
-/* Property Cards Hover States */
-
-.property-card:hover .property-description {
-	height: 0em;
-	padding: 0px 1em;
-}
-
-.property-card:hover .property-image {
-	height: 18em;
-}
-
-.property-card:hover .property-social-icons {
-	background-color: white;
-}
-
-.property-card:hover .property-social-icons:hover {
-	background-color: blue;
-	cursor: pointer;
-}
-
-
-/* Optional
-
-.property-image-title
-{
-text-align:center;
-position:Relative;
-top:30%;
-opacity:0;
-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-color:black;
-font-size:1.2em;
-}
-
-.property-card:hover .property-image-title
-{
-opacity:1;
-}
-
-*/

@@ -13,7 +13,7 @@ export default function Services() {
 
 const localServices = [
 	{
-		image: "https://cdn.discordapp.com/attachments/912368313508712488/1118138835751157792/image.png",
+		image: require("../Images/delivery.png"),
 		title: "Entrega para todo Brasil",
 		subtitle: "Realizamos entregas para todo o Brasil, converse conosco para verificar nossas taxas!"
 	},

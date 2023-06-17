@@ -1,8 +1,8 @@
-import './Intro.css';
+import './Carousel.css';
 import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-function Intro() {
+function CarouselComponent() {
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
@@ -48,4 +48,4 @@ function Intro() {
 	);
 }
 
-export default Intro;
+export default CarouselComponent;

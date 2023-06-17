@@ -1,6 +1,6 @@
 import "./Home.css";
 import Header from "../Header/Header";
-import Intro from "../Intro/Intro";
+import CarouselComponent from "../Carousel/Carousel";
 import Products from "../Products/Products";
 import About from "../About/About";
 import Services from "../Services/Services";
@@ -14,7 +14,11 @@ function Home() {
 				</div>
 
 				<div className="IntroHome">
-					<Intro />
+					<CarouselComponent />
+				</div>
+
+				<div>
+					<Services />
 				</div>
 
 				<div>
@@ -23,10 +27,6 @@ function Home() {
 
 				<div className="AboutHome">
 					<About />
-				</div>
-
-				<div>
-					<Services />
 				</div>
 			</div>
 		</>
