@@ -19,7 +19,8 @@ header{
     align-items: flex-end;
     justify-content: center;
     box-shadow: 1px 1px 1px 1px rgba(116, 110, 110, 0.199);
-    position: relative;
+    position: fixed;
+    z-index: 1;
 }
 .header-inner{
     width: 90%;

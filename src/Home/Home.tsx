@@ -14,25 +14,28 @@ function Home() {
 					<Header />
 				</span>
 
-				<span className="IntroHome">
-					<CarouselComponent />
-				</span>
+				<div className="Content">
+					<span className="IntroHome">
+						<CarouselComponent />
+					</span>
 
-				<>
-					<Services />
-				</>
+					<>
+						<Services />
+					</>
 
-				<>
-					<Products />
-				</>
+					<>
+						<Products />
+					</>
 
-				<span className="AboutHome">
-					<About />
-				</span>
+					<span className="AboutHome">
+						<About />
+					</span>
 
-				<>
-					<SocialMidiaIcons />
-				</>
+					<>
+						<SocialMidiaIcons />
+					</>
+
+				</div>
 			</div>
 		</>
 	);
