@@ -20,16 +20,24 @@ interface NavComponentProps {
 export const NavComponent: React.FC<NavComponentProps> = ({ navClass, linkClassName }) => {
 	const sections = [
 		{
-			id: "/artesdajackeline",
-			name: "Página inicial"
-		},
-		{
 			id: "/shop",
 			name: "Loja"
 		},
 		{
 			id: "/about",
 			name: "Sobre"
+		},
+		{
+			id: '/SignIn',
+			name: "Login"
+		},
+		{
+			id: "/frequentQuestions",
+			name: "Perguntas"
+		},
+		{
+			id: "/contacts",
+			name: "Contato"
 		}
 	]
 	return (

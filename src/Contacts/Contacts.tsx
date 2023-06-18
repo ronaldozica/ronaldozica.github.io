@@ -13,6 +13,7 @@ function Contacts() {
 					display: "grid",
 					placeContent: "center",
 					color: "black",
+					paddingTop: "70px"
 				}}
 			>
 				<div>

@@ -14,25 +14,15 @@ function Home() {
 					<Header />
 				</span>
 
-				<span className="IntroHome">
-					<CarouselComponent />
-				</span>
-
-				<>
-					<Services />
-				</>
-
-				<>
-					<Products />
-				</>
+				<CarouselComponent />
+				<Services />
+				<Products />
 
 				<span className="AboutHome">
 					<About />
 				</span>
 
-				<>
-					<SocialMidiaIcons />
-				</>
+				<SocialMidiaIcons />
 			</div>
 		</>
 	);

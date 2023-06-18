@@ -24,17 +24,11 @@ function Shop() {
 				<Header />
 			</div>
 
-			<div>
+			<div className="SearchBar">
 				<SearchBar isFixed={true} />
 			</div>
 
-			<div
-				style={{
-					display: "grid",
-					placeContent: "center",
-					color: "black",
-				}}
-			>
+			<div className="OuterProductList">
 				<div>
 					<div className="ProductList">
 						{!products || !products.length
