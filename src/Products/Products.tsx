@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Product, { ProductType } from "../Product/Product";
 import "./Products.css";
 import LoadingProduct from "../LoadingProduct/LoadingProduct";
+import SearchBar from "../SearchBar/SearchBar";
 
 export default function Products() {
 	const [products, setProducts] = useState<ProductType[] | null>(null);
@@ -18,7 +19,10 @@ export default function Products() {
 
 	return (
 		<div>
-            Confira nossos produtos mais recentes!
+			Confira nossos produtos mais recentes!
+			<div>
+				<SearchBar isFixed={false} />
+			</div>
 			<div className="ProductList">
 				{!products || !products.length
 					? Array.from({ length: 8 }, (_, i) => i + 1).map((id) => (

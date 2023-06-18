@@ -1,7 +1,14 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import './SearchBar.css';
 
-const SearchBar: React.FC = () => {
+export interface SearchBarConfig {
+	isFixed: boolean
+}
+
+export default function SearchBar({
+	isFixed = false
+}: SearchBarConfig
+) {
 	const [searchTerm, setSearchTerm] = useState<string>('');
 
 	const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
@@ -20,14 +27,12 @@ const SearchBar: React.FC = () => {
 				type="text"
 				value={searchTerm}
 				onChange={handleSearch}
-				placeholder="Search..."
+				placeholder="Buscar produtos..."
 				className="search-input"
 			/>
 			<button type="submit" className="search-button">
-				Search
+				Procurar
 			</button>
 		</form>
 	);
 }
-
-export default SearchBar;

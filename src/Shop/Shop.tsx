@@ -25,7 +25,7 @@ function Shop() {
 			</div>
 
 			<div>
-				<SearchBar />
+				<SearchBar isFixed={true} />
 			</div>
 
 			<div
