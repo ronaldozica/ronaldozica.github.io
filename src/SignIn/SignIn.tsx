@@ -19,6 +19,15 @@ function SignIn() {
 				}}
 			>
 				<LoginForm />
+				<Link
+					to="/changePassword"
+					style={{
+						textAlign: "center",
+						fontSize: "0.7rem",
+					}}
+				>
+					Mudar senha
+				</Link>
 			</div>
 		</div>
 	);
@@ -79,7 +88,7 @@ const LoginForm = () => {
 				className="Button secundary"
 				style={{
 					marginTop: 10,
-					textDecoration: "none"
+					textDecoration: "none",
 				}}
 			>
 				Criar conta

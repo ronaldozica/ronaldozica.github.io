@@ -8,6 +8,7 @@ import SignUp from "./SignUp/SignUp";
 import Contacts from "./Contacts/Contacts";
 import FrequentQuestions from "./FrequentQuestions/FrequentQuestions";
 import Shop from "./Shop/Shop";
+import ChangePassword from "./ChangePassword/ChangePassword";
 
 const Context = React.createContext<any>(null);
 
@@ -29,10 +30,16 @@ function App() {
 					<Route path="/about" element={<AboutPage />} />
 					<Route path="/signIn" element={<SignIn />} />
 					<Route path="/signUp" element={<SignUp />} />
-					<Route path="/frequentQuestions" element={<FrequentQuestions />} />
+					<Route
+						path="/frequentQuestions"
+						element={<FrequentQuestions />}
+					/>
 					<Route path="/contacts" element={<Contacts />} />
 					<Route path="/shop" element={<Shop />} />
-
+					<Route
+						path="/changePassword"
+						element={<ChangePassword />}
+					/>
 				</Routes>
 			</Context.Provider>
 		</div>
