@@ -16,8 +16,6 @@ export function Products({ amount }: Props) {
                 <Product
                     id={product.id}
                     caption={product.caption}
-                    media_product_type={product.media_product_type}
-                    media_type={product.media_type}
                     media_url={product.media_url}
                     permalink={product.permalink}
                 />

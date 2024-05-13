@@ -1,4 +1,4 @@
-// File: /home/ronaldozica/Documents/CEFET/artesdajackeline/app/store/page.tsx
+// File: /home/ronaldozica/Documents/GitHub/artesdajackeline/app/store/page.tsx
 import * as entry from '../../../../app/store/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

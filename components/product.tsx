@@ -54,8 +54,6 @@ export const tags = [
 export default function Product({
     id,
     caption,
-    media_product_type,
-    media_type,
     media_url,
     permalink
 }: ProductType) {
@@ -68,8 +66,6 @@ export default function Product({
                         <ProductModal
                             id={id}
                             caption={caption}
-                            media_product_type={media_product_type}
-                            media_type={media_type}
                             media_url={media_url}
                             permalink={permalink}
                         />
@@ -79,7 +75,7 @@ export default function Product({
                     <div className="max-w-sm rounded-lg bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
                         <DialogTrigger className="w-full">
                             <Image
-                                src={media_url!}
+                                src={require(`../public/${id}.png`)}
                                 className="aspect-square w-full rounded-[40px] object-cover p-8"
                                 alt={`product image_${id}`}
                                 width={300}

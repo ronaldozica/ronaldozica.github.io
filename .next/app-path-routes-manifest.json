@@ -1,7 +1,7 @@
 {
   "/page": "/",
+  "/about/page": "/about",
   "/faq/page": "/faq",
   "/search/page": "/search",
-  "/about/page": "/about",
   "/store/page": "/store"
 }

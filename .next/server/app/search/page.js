@@ -220,7 +220,7 @@ module.exports = require("next/dist/shared/lib/utils/warn-once");
 
 /***/ }),
 
-/***/ 115:
+/***/ 6712:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -253,7 +253,7 @@ __webpack_require__.r(__webpack_exports__);
         'search',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7186)), "/home/ronaldozica/Documents/CEFET/artesdajackeline/app/search/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7186)), "/home/ronaldozica/Documents/GitHub/artesdajackeline/app/search/page.tsx"],
           
         }]
       },
@@ -264,12 +264,12 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5520)), "/home/ronaldozica/Documents/CEFET/artesdajackeline/app/layout.tsx"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5520)), "/home/ronaldozica/Documents/GitHub/artesdajackeline/app/layout.tsx"],
           
         }
       ]
       }.children;
-    const pages = ["/home/ronaldozica/Documents/CEFET/artesdajackeline/app/search/page.tsx"];
+    const pages = ["/home/ronaldozica/Documents/GitHub/artesdajackeline/app/search/page.tsx"];
 
     
 
@@ -294,18 +294,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 9677:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23))
-
-/***/ }),
-
-/***/ 5358:
+/***/ 9554:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23));
@@ -474,7 +463,7 @@ var search_bar = __webpack_require__(3094);
 var module_proxy = __webpack_require__(1363);
 ;// CONCATENATED MODULE: ./components/search-products.tsx
 
-const proxy = (0,module_proxy.createProxy)(String.raw`/home/ronaldozica/Documents/CEFET/artesdajackeline/components/search-products.tsx`)
+const proxy = (0,module_proxy.createProxy)(String.raw`/home/ronaldozica/Documents/GitHub/artesdajackeline/components/search-products.tsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -523,7 +512,7 @@ function SearchPage() {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [331,358,26,819,479], () => (__webpack_exec__(115)));
+var __webpack_exports__ = __webpack_require__.X(0, [331,358,191,819,479], () => (__webpack_exec__(6712)));
 module.exports = __webpack_exports__;
 
 })();

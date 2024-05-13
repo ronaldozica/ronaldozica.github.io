@@ -2,15 +2,12 @@
 
 import React from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { Instagram, PlusSquare } from "lucide-react"
 import { tags } from "./product"
 
 export interface ProductType {
     id: string,
     caption?: string,
-    media_product_type?: string,
-    media_type?: string,
     media_url?: string,
     permalink?: string
 }
@@ -18,8 +15,6 @@ export interface ProductType {
 export default function ProductModal({
     id,
     caption,
-    media_product_type,
-    media_type,
     media_url,
     permalink
 }: ProductType) {
@@ -28,7 +23,7 @@ export default function ProductModal({
             <div>
                 <div className="rounded-lg bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
                     <Image
-                        src={media_url!}
+                        src={require(`../public/${id}.png`)}
                         className="aspect-square w-full rounded-[40px] object-cover p-8"
                         alt={`product image_${id}`}
                         width={300}

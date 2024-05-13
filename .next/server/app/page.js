@@ -220,7 +220,7 @@ module.exports = require("next/dist/shared/lib/utils/warn-once");
 
 /***/ }),
 
-/***/ 1931:
+/***/ 9797:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -250,17 +250,17 @@ __webpack_require__.r(__webpack_exports__);
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7160)), "/home/ronaldozica/Documents/CEFET/artesdajackeline/app/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7160)), "/home/ronaldozica/Documents/GitHub/artesdajackeline/app/page.tsx"],
           
         }]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5520)), "/home/ronaldozica/Documents/CEFET/artesdajackeline/app/layout.tsx"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5520)), "/home/ronaldozica/Documents/GitHub/artesdajackeline/app/layout.tsx"],
           
         }
       ]
       }.children;
-    const pages = ["/home/ronaldozica/Documents/CEFET/artesdajackeline/app/page.tsx"];
+    const pages = ["/home/ronaldozica/Documents/GitHub/artesdajackeline/app/page.tsx"];
 
     
 
@@ -285,25 +285,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 2720:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23))
-
-/***/ }),
-
-/***/ 5753:
+/***/ 2819:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 954, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9313));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9422));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8680));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9422));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6970))
 
 /***/ }),
@@ -434,7 +423,7 @@ var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 var module_proxy = __webpack_require__(1363);
 ;// CONCATENATED MODULE: ./components/Intro/Intro.tsx
 
-const proxy = (0,module_proxy.createProxy)(String.raw`/home/ronaldozica/Documents/CEFET/artesdajackeline/components/Intro/Intro.tsx`)
+const proxy = (0,module_proxy.createProxy)(String.raw`/home/ronaldozica/Documents/GitHub/artesdajackeline/components/Intro/Intro.tsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -516,7 +505,7 @@ function IndexPage() {
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [331,358,26,819,720,479], () => (__webpack_exec__(1931)));
+var __webpack_exports__ = __webpack_require__.X(0, [331,358,191,819,479,720], () => (__webpack_exec__(9797)));
 module.exports = __webpack_exports__;
 
 })();

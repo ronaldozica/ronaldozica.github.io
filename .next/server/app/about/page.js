@@ -220,7 +220,7 @@ module.exports = require("next/dist/shared/lib/utils/warn-once");
 
 /***/ }),
 
-/***/ 2654:
+/***/ 3388:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -253,7 +253,7 @@ __webpack_require__.r(__webpack_exports__);
         'about',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4306)), "/home/ronaldozica/Documents/CEFET/artesdajackeline/app/about/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4306)), "/home/ronaldozica/Documents/GitHub/artesdajackeline/app/about/page.tsx"],
           
         }]
       },
@@ -264,12 +264,12 @@ __webpack_require__.r(__webpack_exports__);
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5520)), "/home/ronaldozica/Documents/CEFET/artesdajackeline/app/layout.tsx"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5520)), "/home/ronaldozica/Documents/GitHub/artesdajackeline/app/layout.tsx"],
           
         }
       ]
       }.children;
-    const pages = ["/home/ronaldozica/Documents/CEFET/artesdajackeline/app/about/page.tsx"];
+    const pages = ["/home/ronaldozica/Documents/GitHub/artesdajackeline/app/about/page.tsx"];
 
     
 
@@ -294,18 +294,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 2720:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23))
-
-/***/ }),
-
-/***/ 9251:
+/***/ 2815:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23))
@@ -374,7 +363,7 @@ function About() {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [331,26], () => (__webpack_exec__(2654)));
+var __webpack_exports__ = __webpack_require__.X(0, [331,191], () => (__webpack_exec__(3388)));
 module.exports = __webpack_exports__;
 
 })();
