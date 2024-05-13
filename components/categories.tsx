@@ -12,7 +12,7 @@ import {
 } from "./ui/dropdown-menu"
 
 export default function Categories() {
-  const categories = ["Divino", "Mandala", "Madeira", "Mdf", "Natal", "Tecido"]
+  const categories = ["Divino", "Mandala", "Madeira", "Mdf", "Natal", "Tecido", "Crochê"]
   return (
     <div>
       <div className="hidden h-5 items-center space-x-4 text-sm md:flex">

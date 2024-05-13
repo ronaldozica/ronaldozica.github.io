@@ -47,8 +47,9 @@ export function SearchProducts() {
                     <div key={product.id}>
                         <Product
                             id={product.id}
+                            title={product.title}
                             caption={product.caption}
-                            media_url={product.media_url}
+                            price={product.price}
                             permalink={product.permalink}
                         />
                     </div>

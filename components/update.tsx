@@ -10,9 +10,6 @@ import { useToast } from "./ui/use-toast"
 export default function Update({
   id,
   caption,
-  media_url,
-  permalink,
-  thumbnail_url,
   setMoreProducts,
 }: any) {
   const [cCaption, setCaption] = useState(caption)

@@ -1,5 +1,3 @@
-"use client"
-
 import React from "react"
 import Image from "next/image"
 import { Instagram, PlusSquare } from "lucide-react"
@@ -7,15 +5,17 @@ import { tags } from "./product"
 
 export interface ProductType {
     id: string,
-    caption?: string,
-    media_url?: string,
+    title: string,
+    caption: string,
+    price?: string,
     permalink?: string
 }
 
 export default function ProductModal({
     id,
+    title,
     caption,
-    media_url,
+    price,
     permalink
 }: ProductType) {
     return (
@@ -32,13 +32,19 @@ export default function ProductModal({
                     <div className="px-5 pb-5">
                         <div>
                             <h3 className="text-left text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                {caption?.split("\n")[0]}
+                                {title}
                             </h3>
+                            <p className="text-left text-lg font-semibold tracking-tight text-gray-700 dark:text-gray-300">
+                                {price ? `R$${price}` : "Preços variados"}
+                            </p>
+                            <p className="text-left text-base tracking-tight text-gray-700 dark:text-gray-300">
+                                {caption}
+                            </p>
                         </div>
                         <div className="mb-5 mt-2.5 flex items-center">
                             {
                                 tags.map(tag => {
-                                    if (caption?.toLowerCase().match(tag.id)) {
+                                    if (caption.toLowerCase().includes(tag.id)) {
                                         return (
                                             <div
                                                 key={tag.id}

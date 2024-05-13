@@ -1,5 +1,3 @@
-"use client"
-
 import React from "react"
 import Image from "next/image"
 import { Instagram, PlusSquare } from "lucide-react"
@@ -48,13 +46,19 @@ export const tags = [
         name: "Páscoa",
         id: "páscoa",
         backgroundColor: "#f4f5ed"
+    },
+    {
+        name: "Crochê",
+        id: "malha",
+        backgroundColor: "#366b75"
     }
 ];
 
 export default function Product({
     id,
+    title,
     caption,
-    media_url,
+    price,
     permalink
 }: ProductType) {
     return (
@@ -65,18 +69,19 @@ export default function Product({
                         <DialogTitle>Comprar produto</DialogTitle>
                         <ProductModal
                             id={id}
+                            title={title}
                             caption={caption}
-                            media_url={media_url}
+                            price={price}
                             permalink={permalink}
                         />
                     </DialogHeader>
                 </DialogContent>
-                <div className="mx-auto max-w-lg">
+                <div className="mx-auto max-w-lg max-h-lg">
                     <div className="max-w-sm rounded-lg bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
                         <DialogTrigger className="w-full">
                             <Image
                                 src={require(`../public/${id}.png`)}
-                                className="aspect-square w-full rounded-[40px] object-cover p-8"
+                                className="aspect-square rounded-[40px] object-cover p-8"
                                 alt={`product image_${id}`}
                                 width={300}
                                 height={300}
@@ -84,15 +89,24 @@ export default function Product({
                         </DialogTrigger>
                         <div className="px-5 pb-5">
                             <DialogTrigger>
-                                <div>
-                                    <h3 className="line-clamp-3 min-h-[80px] text-left text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                        {caption?.split("\n")[0]}
-                                    </h3>
-                                </div>
+                                <div className="max-w-[300px] rounded-lg bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
+                                  <div className="px-5 pb-5">
+                                      <h3 className="line-clamp-3 h-[80px] text-left text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                          {title}
+                                      </h3>
+                                      <p className="text-left text-lg font-semibold tracking-tight text-gray-700 dark:text-gray-300">
+                                          {price ? `R$${price}` : "Preços variados"}
+                                      </p>
+                                      <p className="text-left text-base tracking-tight text-gray-700 dark:text-gray-300 overflow-hidden overflow-ellipsis whitespace-nowrap w-[100%]">
+                                          {caption}
+                                      </p>
+                                  </div>
+                              </div>
+
                                 <div className="mb-5 mt-2.5 flex items-center">
                                     {
                                         tags.map(tag => {
-                                            if (caption?.toLowerCase().match(tag.id)) {
+                                            if (caption?.toLowerCase().includes(tag.id)) {
                                                 return (
                                                     <div
                                                         key={tag.id}

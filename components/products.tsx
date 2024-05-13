@@ -15,8 +15,9 @@ export function Products({ amount }: Props) {
             {products.map((product) => (
                 <Product
                     id={product.id}
+                    title={product.title}
                     caption={product.caption}
-                    media_url={product.media_url}
+                    price={product.price}
                     permalink={product.permalink}
                 />
             ))}
