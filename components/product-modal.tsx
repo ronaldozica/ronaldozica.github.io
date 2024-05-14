@@ -31,13 +31,13 @@ export default function ProductModal({
                     />
                     <div className="px-5 pb-5">
                         <div>
-                            <h3 className="text-left text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                            <h3 className="text-left text-xl font-semibold tracking-tight text-gray-900 dark:text-white text-center">
                                 {title}
                             </h3>
-                            <p className="text-left text-lg font-semibold tracking-tight text-gray-700 dark:text-gray-300">
+                            <p className="text-left text-lg font-semibold tracking-tight text-gray-700 dark:text-gray-300 text-center">
                                 {price ? `R$${price}` : "Preços variados"}
                             </p>
-                            <p className="text-left text-base tracking-tight text-gray-700 dark:text-gray-300">
+                            <p className="text-left text-base tracking-tight text-gray-700 dark:text-gray-300 text-center">
                                 {caption}
                             </p>
                         </div>

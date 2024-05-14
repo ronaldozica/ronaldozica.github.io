@@ -89,18 +89,18 @@ export default function Product({
                         </DialogTrigger>
                         <div className="px-5 pb-5">
                             <DialogTrigger>
-                                <div className="max-w-[300px] rounded-lg bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
-                                  <div className="px-5 pb-5">
-                                      <h3 className="line-clamp-3 h-[80px] text-left text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                          {title}
-                                      </h3>
-                                      <p className="text-left text-lg font-semibold tracking-tight text-gray-700 dark:text-gray-300">
-                                          {price ? `R$${price}` : "Preços variados"}
-                                      </p>
-                                      <p className="text-left text-base tracking-tight text-gray-700 dark:text-gray-300 overflow-hidden overflow-ellipsis whitespace-nowrap w-[100%]">
-                                          {caption}
-                                      </p>
-                                  </div>
+                              <div className="max-w-[250px] rounded-lg bg-white shadow-md dark:border-gray-700 dark:bg-gray-800">
+                                <div className="px-5 pb-5">
+                                    <h3 className="line-clamp-2 h-[60px] text-left text-xl font-semibold tracking-tight text-gray-900 dark:text-white text-center">
+                                        {title}
+                                    </h3>
+                                    <p className="text-left text-lg font-semibold tracking-tight text-gray-700 dark:text-gray-300 text-center">
+                                        {price ? `R$${price}` : "Preços variados"}
+                                    </p>
+                                    <p className="text-left text-base tracking-tight text-gray-700 dark:text-gray-300 overflow-hidden overflow-ellipsis whitespace-nowrap w-[100%] text-center">
+                                        {caption}
+                                    </p>
+                                </div>
                               </div>
 
                                 <div className="mb-5 mt-2.5 flex items-center">
