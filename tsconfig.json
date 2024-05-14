@@ -30,6 +30,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "tailwind.config.js"
-  ],
+, "api/productsSearch/route.js"  ],
   "exclude": ["node_modules"]
 }
