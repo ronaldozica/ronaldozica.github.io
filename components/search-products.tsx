@@ -8,42 +8,70 @@ import Product from "./product"
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert"
 import { useToast } from "./ui/use-toast"
 
+interface ProductType {
+    id: string
+    title: string
+    caption: string
+    price: string
+    permalink: string
+}
+
 export function SearchProducts() {
     const searchParams = useSearchParams()
-    const query = searchParams.get("query")
+    const query = searchParams?.get("query")
     const { toast } = useToast()
 
-    const [products, setProducts] = useState<any>(null)
-    const [isLoading, setIsLoading] = useState(true)
+    const [products, setProducts] = useState<ProductType[] | null>(null)
+    const [isLoading, setIsLoading] = useState<boolean>(true)
 
     useEffect(() => {
-        ; (async () => {
-            const response = await fetch("/api/productsSearch", {
-                method: "POST",
-                body: JSON.stringify({
-                    query: query,
-                }),
-            })
+        if (!query) return
 
-            const resultProducts = await response.json()
-
-            if (!resultProducts || !resultProducts.length) {
-                toast({
-                    variant: "destructive",
-                    title: "Erro ao pesquisar produtos",
-                    description: "Nenhum produto corresponde a sua pesquisa",
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch("/api/productsSearch", {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ query }),
                 })
-            }
 
-            setProducts(resultProducts)
-            setIsLoading(false)
-        })()
+                if (!response.ok) {
+                    throw new Error('Ocorreu um erro inesperado')
+                }
+
+                const resultProducts: ProductType[] = await response.json()
+
+                if (!resultProducts || !resultProducts.length) {
+                    toast({
+                        variant: "destructive",
+                        title: "Erro ao pesquisar produtos",
+                        description: "Nenhum produto corresponde a sua pesquisa",
+                    })
+                }
+
+                setProducts(resultProducts)
+            } catch (error: any) {
+              toast({
+                variant: "destructive",
+                title: "Erro ao pesquisar produtos",
+                description: error.message || "Ocorreu um erro inesperado",
+              })
+            } finally {
+                setIsLoading(false)
+            }
+        }
+
+        fetchProducts()
     }, [query, toast])
 
     return (
         <>
-            {products && products.length > 0 ? (
-                products.map((product: any) => (
+            {isLoading ? (
+                <div>Loading...</div>
+            ) : products && products.length > 0 ? (
+                products.map((product) => (
                     <div key={product.id}>
                         <Product
                             id={product.id}
@@ -54,8 +82,6 @@ export function SearchProducts() {
                         />
                     </div>
                 ))
-            ) : isLoading ? (
-                <></>
             ) : (
                 <Alert variant="destructive">
                     <AlertCircle className="h-4 w-4" />

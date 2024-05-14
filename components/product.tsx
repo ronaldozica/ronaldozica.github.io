@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import { Instagram, PlusSquare } from "lucide-react"
+import tags from '../public/tagsFile.json';
 
 import ProductModal, { ProductType } from "./product-modal"
 import {
@@ -10,49 +11,6 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "./ui/dialog"
-
-export const tags = [
-    {
-        name: "Divino",
-        id: "divino",
-        backgroundColor: "#dcdeca"
-    },
-    {
-        name: "Mandala",
-        id: "mandala",
-        backgroundColor: "#d9c6a5"
-    },
-    {
-        name: "Madeira",
-        id: "madeira",
-        backgroundColor: "#d19e38"
-    },
-    {
-        name: "Mdf",
-        id: "mdf",
-        backgroundColor: "#a18047"
-    },
-    {
-        name: "Natal",
-        id: "natal",
-        backgroundColor: "#d13848"
-    },
-    {
-        name: "Tecido",
-        id: "tecido",
-        backgroundColor: "#8a8a88"
-    },
-    {
-        name: "Páscoa",
-        id: "páscoa",
-        backgroundColor: "#f4f5ed"
-    },
-    {
-        name: "Crochê",
-        id: "malha",
-        backgroundColor: "#366b75"
-    }
-];
 
 export default function Product({
     id,

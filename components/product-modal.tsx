@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import { Instagram, PlusSquare } from "lucide-react"
-import { tags } from "./product"
+import tags from '../public/tagsFile.json';
 
 export interface ProductType {
     id: string,
