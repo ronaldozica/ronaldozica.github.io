@@ -1,6 +1,6 @@
 # E-commerce Atêlie: Artes da Jackeline
 
-Bem-vindo ao repositório do **E-commerce Atêlie: Artes da Jackeline**, um projeto desenvolvido para comercializar produtos artesanais exclusivos. Este projeto foi criado utilizando tecnologias modernas, como **React**, **Next.js** e **Tailwind CSS**, visando oferecer uma experiência de usuário elegante e responsiva.
+Bem-vindo ao repositório do **E-commerce Atêlie: Artes da Jackeline**, um projeto desenvolvido para comercializar produtos artesanais exclusivos. Este projeto foi criado utilizando **React**, **Next.js** e **Tailwind CSS**, visando oferecer uma experiência de usuário elegante e responsiva.
 
 🔗 Acesse o projeto: [Artes da Jackeline](https://artesdajackeline.vercel.app/)
 
