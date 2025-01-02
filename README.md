@@ -121,7 +121,3 @@ Caso tenha dúvidas, sugestões ou queira colaborar, entre em contato:
 <img align="left" alt="Ronaldo's Gmail" src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 </p>
-
---- 
-
-Let me know if further adjustments are needed!
