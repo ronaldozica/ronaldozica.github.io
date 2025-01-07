@@ -46,8 +46,8 @@ export function SearchProducts() {
                 if (!resultProducts || !resultProducts.length) {
                     toast({
                         variant: "destructive",
-                        title: "Erro ao pesquisar produtos",
-                        description: "Nenhum produto corresponde a sua pesquisa",
+                        title: "Aviso",
+                        description: "Não encontramos nenhum produto corresponde a sua pesquisa",
                     })
                 }
 
@@ -55,7 +55,7 @@ export function SearchProducts() {
             } catch (error: any) {
               toast({
                 variant: "destructive",
-                title: "Erro ao pesquisar produtos",
+                title: "Aviso",
                 description: error.message || "Ocorreu um erro inesperado",
               })
             } finally {
@@ -69,7 +69,7 @@ export function SearchProducts() {
     return (
         <>
             {isLoading ? (
-                <div>Loading...</div>
+                <div>Carregando...</div>
             ) : products && products.length > 0 ? (
                 products.map((product) => (
                     <div key={product.id}>
@@ -85,9 +85,9 @@ export function SearchProducts() {
             ) : (
                 <Alert variant="destructive">
                     <AlertCircle className="h-4 w-4" />
-                    <AlertTitle>Erro</AlertTitle>
+                    <AlertTitle>Aviso</AlertTitle>
                     <AlertDescription>
-                        Não foi possível carregar produtos com a sua pesquisa
+                        Não encontramos nenhum produto corresponde a sua pesquisa
                     </AlertDescription>
                 </Alert>
             )}

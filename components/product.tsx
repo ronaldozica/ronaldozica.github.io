@@ -87,7 +87,6 @@ export default function Product({
                                         <Instagram />
                                     </a>
                                 )}
-                                <PlusSquare />
                                 <a
                                     target="_blank"
                                     rel="noopener noreferrer"

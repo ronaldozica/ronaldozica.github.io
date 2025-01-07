@@ -52,6 +52,7 @@ module.exports = {
         },
         providerColor: "var(--provider-color)",
         providerBg: "var(--provider-bg)",
+        antiquewhite: '#faebd7',
       },
       borderRadius: {
         lg: "var(--radius)",
